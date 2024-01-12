@@ -30,12 +30,11 @@ springdoc:
   # Spring Actuator의 endPoint까지 보여줄 것인지?
   show-actuator: true
 
-  # request media type의 기본 값
-  default-consumes-media-type: application/json
+  # request media type의 기본 값. default가 application/json. 작동안해서 일단 지워봄.
+  default-consumes-media-type: application/json;charset=UTF-8
 
   # response media type의 기본 값
-  default-produces-media-type: application/json
+  default-produces-media-type: application/json;charset=UTF-8
 
   # 해당 패턴에 매칭되는 controller만 swagger-ui에 노출한다
-  paths-to-match:
-    - /api/**
+  paths-to-match: /api/**
